@@ -19,9 +19,7 @@ namespace RemoteLoginHelper
 			{
 				if (!mutex.WaitOne(0, false))
 				{
-//#if (DEBUG)
 					MessageBox.Show("すでに実行中です。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
-//#endif
 					return;
 				}
 
